@@ -1,0 +1,102 @@
+header {
+    background-color: rgb(231, 160, 6);
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.nav li a {
+    color: black;
+}
+
+
+header img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+.image-card {
+    width: 80%;
+    height: 130px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.card {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color:rgb(231, 160, 6, 0.2);
+}
+
+.card-header {
+    color: blue;
+    font-weight: bold;
+}
+
+.row h2 {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: blue;
+}
+
+.row h6 {
+    color: blue;
+    margin-left: 12px;
+}
+
+.carousel-item img {
+    display: block;
+    width: 70%;
+    height: 250px;
+    margin: auto auto;
+}
+
+#btn-slide {
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+article {
+    min-height: 100%;
+}
+
+#contato p {
+    text-align: center;
+    margin: auto;
+}
+
+#contato {
+    margin-bottom: 520px;
+}
+
+.card-body p {
+    text-align: justify;
+    width: 90%;
+    margin: auto auto auto 12px;
+}
+
+@media screen and (max-width: 820px) {
+    #contato {
+        margin-bottom: 1000px;
+    }
+
+    .nav li a {
+        margin: 0;
+        padding: 6px;
+        font-size: 13px;
+    }
+
+    .navbar ul li{
+        text-align: center;
+        margin: auto;
+        padding: auto;
+    }
+    
+}

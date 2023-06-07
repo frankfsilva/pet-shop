@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet happy</title>
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-expand-lg">                                               <!--"navbar-expand-lg" => expande a largura do conteudo do menu hamburguer em display grande " / o bootstrap alinha automaticamente os itens lado a class="nav-link" lado e elimina os bullets / "navbar" => necessário para estilizar os links do nav-->
+            <div class="container">
+                <img src="./images/Marca de pata.png" alt="Pata de pet">
+                <h1>Pet Happy</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">       
+                    <span class="navbar-toggler-icon"></span>                               <!--menu hamburguer do bootstrap em um botão /"data-bs-target=" => indica quem será collpsado ou exibido -->
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">        <!--menu de navegação naturalmente invisível (duas classes="collapse navbar-collpase") / "justify-content-end" justifica o conteudo para os extremos da página=> -->
+                    <ul class="nav nav-bar nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quem-somos">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pets">Pets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        <div class="container">
+            <div id="carousel-bichos" class="carousel slide" data-bs-ride="carousel">    <!--'carousel slide' => classe com código carousel/ 'data-bs-ride=carousel' => sintaxe para o carousel funcionar-->
+                <div class="carousel-inner">                        <!--armazena as imagens do carousel-->
+                    <div data-bs-interval="3000" class="carousel-item active">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/1-cacatua.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/2-cachorro1.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/3-porcos da india.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/4-cachorro3.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/5-calopsitas.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/6-coelho.webp"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/7-gatos.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/8-hamster.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/9-periquitos.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/11-cachorro2.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/12-gatos2.jpg"/>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
+                        <img src="./images/animais/13-ring neck.jpg"/>
+                    </div>
+                    <button id="btn-slide" data-bs-target="#carousel-bichos" data-bs-slide="prev" class="carousel-control-prev" type="button" > <!--botão de retornar slide-->
+                        <span class="carousel-control-prev-icon"></span>    <!--escreve o icone do botão sobre o slide-->
+                    </button>
+                    <button id="btn-slide" data-bs-target="#carousel-bichos" data-bs-slide="next" class="carousel-control-next" type="button"> <!--botão de avançar slide-->
+                        <span class="carousel-control-next-icon"></span>    <!--escreve oicone do botão sobre o slide-->
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-bichos" class="active" data-bs-slde-to="0" ></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="6"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="7"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="8"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="9"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="10"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="11"></button>
+                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="12"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row" id="quem-somos">
+                <h2>Quem somos</h2>
+
+                <div class="col-12">
+                    <article class="card">
+                        <div class="card-body" class="quem-somos">
+                        <p>Somos mais que um pet, somos uma loja com toda a estrutura necessária
+                            para garantir o bem estar do seu pet, além podermos ajudá-lo a ter um, caso ainda
+                            tenha.
+                        </p>
+                        <p>
+                            Contamos com profisisonais treinados para melhor atendê-los e, principalmente, atender muito bem
+                            o seu pet.
+                        </p>
+                        <p>
+                            Venha nos visitar
+                        </p>
+                        </div>
+                    </article>
+                </div>
+        
+        
+        <div class="container">
+            <div class="row" id="produtos">
+                <h2>Produtos</h2>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <article class="card">
+                        <div class="card-header">
+                            Roupas e guias
+                        </div>
+                        <img class="image-card" src="./images/cachorro com roupa.jpg" alt="cachorro com roupa">
+                        <div class="card-body">
+                            <h6>Para o conforto e segurança do seu pet:</h6>
+                            <ul>
+                                <li>Blusas</li>
+                                <li>Calçados</li>
+                                <li>Laços</li>
+                                <li>Guias</li>
+                                <li>Coleiras</li>
+                                <li>Focinheiras</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <article class="card">
+                        <div class="card-header">
+                            Brinquedos
+                        </div>
+                        <img class="image-card" src="./images/brinquedos.webp" alt="cachorro com roupa">
+                        <div class="card-body">
+                            <h6>Variedades para cada tipo de pet</h6>
+                            <ul>
+                                <li>Bolinhas</li>
+                                <li>Mordedores</li>
+                                <li>Escadas e balanços</li>
+                                <li>Rodas de exercícios</li>
+                                <li>Playballs</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <article class="card">
+                        <div class="card-header">
+                            Higiene / Saúde / Alimentação
+                        </div>
+                        <img class="image-card" src="./images/higiene, saude, alimentação.webp">
+                        <div class="card-body">
+                            <h6>Para o bem estar do seu pet</h6>
+                            <ul>
+                                <li>Shampoos</li>
+                                <li>Lenços umedecidos</li>
+                                <li>Rações</li>
+                                <li>Petiscos</li>
+                                <li>Vitâminas</li>
+                                <li>Farmácia</li>
+                            </ul>
+                        </div>
+                    </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Lar do pet
+                            </div>
+                            <img class="image-card" src="./images/lar do pet.webp">
+                            <div class="card-body">
+                                <h6>Para seu pet, temos</h6>
+                                <ul>
+                                    <li>Aquários</li>
+                                    <li>Casinhas</li>
+                                    <li>Camas</li>
+                                    <li>Gaiolas</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row" id="pets">
+                    <h2>Pets</h2>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Mamíferos
+                            </div>
+                            <img class="image-card" src="./images/mamiferos.png">
+                            <div class="card-body">
+                                <h6>Adquira um mamífero</h6>
+                                <ul>
+                                    <li>Cachorros</li>
+                                    <li>Gatos</li>
+                                    <li>Coelhos</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Aves
+                            </div>
+                            <img class="image-card" src="./images/aves.webp">
+                            <div class="card-body">
+                                <h6>Adquira uma ave</h6>
+                                <ul>
+                                    <li>Calopsítas</li>
+                                    <li>Períquitos</li>
+                                    <li>Ring necks</li>
+                                    <li>Periquito australiano</li>
+                                    <li>Agapornis</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Roedores
+                            </div>
+                            <img class="image-card" src="./images/roedores.jpg">
+                            <div class="card-body">
+                                <h6>Adquira um roedor</h6>
+                                <ul>
+                                    <li>Porquinho da Índia</li>
+                                    <li>Hamster</li>
+                                    <li>Chinchila</li>
+                                    <li>Twisters</li>
+                                    <li>Gerbil</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Peixes
+                            </div>
+                            <img class="image-card" src="./images/peixes.jpeg">
+                            <div class="card-body">
+                                <h6>Adquira um peixinho</h6>
+                                <ul>
+                                    <li>Beta</li>
+                                    <li>Colisa</li>
+                                    <li>Tetra neon</li>
+                                    <li>Coridora</li>
+                                    <li>Kingui</li>
+                                    <li>Molinésia</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                <div class="row" id="servicos"></div>
+                    <h2>Serviços</h2>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Banho e tosa
+                            </div>
+                            <img class="image-card" src="./images/banho e tosa.jpg">
+                            <div class="card-body">
+                                <h6>Cuidando do seu pet</h6>
+                                <p>
+                                    Serviço de leva e trás
+                                    com e sem agendamento
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Adestramento
+                            </div>
+                            <img class="image-card" src="./images/adestramento.jpg">
+                            <div class="card-body">
+                                <h6>Educando seu pet</h6>
+                                <p>
+                                    Nosso serviço conta com profissionais
+                                    com larga experiência em adestramento,
+                                    educando seu pet com todo cuidado e atenção
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            <div class="card-header">
+                                Adoção
+                            </div>
+                            <img class="image-card" src="./images/adocao.jpg">
+                            <div class="card-body">
+                                <h6>Adote seu pet</h6>
+                                <p>
+                                    Todos os pets à disposição para adoção
+                                    são vacinados e cuidadosamente tratados
+                                    com o acompanhamento de nossos veterinários
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="row" id="contato">
+                    <h2>Contato</h2>
+                    <div class="col-12">
+                        <article class="card">
+                            <div class="card-body">
+                                <p>Av. Guarulhos 232B - Ponte Grande - Guarulhos - São Paulo - 07031-000</p>
+                                <p>Fone: (11) 1234-123456 / (11) 91234-4567</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+        </div>
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
