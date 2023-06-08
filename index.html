@@ -39,7 +39,7 @@
             </div>
         </div>
     </header>
-        <div class="container">
+        <div class="container" id="slides">
             <div id="carousel-bichos" class="carousel slide" data-bs-ride="carousel">    <!--'carousel slide' => classe com código carousel/ 'data-bs-ride=carousel' => sintaxe para o carousel funcionar-->
                 <div class="carousel-inner">                        <!--armazena as imagens do carousel-->
                     <div data-bs-interval="3000" class="carousel-item active">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
@@ -64,7 +64,7 @@
                         <img src="./images/animais/7-gatos.jpg"/>
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
-                        <img src="./images/animais/8-hamster.jpg"/>
+                        <img src="./images/animais/8-Hamster2.webp"/>
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
                         <img src="./images/animais/9-periquitos.jpg"/>
@@ -76,7 +76,7 @@
                         <img src="./images/animais/12-gatos2.jpg"/>
                     </div>
                     <div data-bs-interval="3000" class="carousel-item">     <!--item com uma das imagens do carousel / 'interval' => intervalo em milisegundos-->
-                        <img src="./images/animais/13-ring neck.jpg"/>
+                        <img src="./images/animais/13-Ring-Neck-2.webp"/>
                     </div>
                     <button id="btn-slide" data-bs-target="#carousel-bichos" data-bs-slide="prev" class="carousel-control-prev" type="button" > <!--botão de retornar slide-->
                         <span class="carousel-control-prev-icon"></span>    <!--escreve o icone do botão sobre o slide-->
@@ -84,7 +84,7 @@
                     <button id="btn-slide" data-bs-target="#carousel-bichos" data-bs-slide="next" class="carousel-control-next" type="button"> <!--botão de avançar slide-->
                         <span class="carousel-control-next-icon"></span>    <!--escreve oicone do botão sobre o slide-->
                     </button>
-                    <div class="carousel-indicators">
+                    <div class="carousel-indicators">                       <!--botões indicadores para mostrar qual slide está sendo exibido-->
                         <button type="button" data-bs-target="#carousel-bichos" class="active" data-bs-slde-to="0" ></button>
                         <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="2"></button>
@@ -97,7 +97,6 @@
                         <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="9"></button>
                         <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="10"></button>
                         <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="11"></button>
-                        <button type="button" data-bs-target="#carousel-bichos" data-bs-slide-to="12"></button>
                     </div>
                 </div>
             </div>
@@ -125,19 +124,18 @@
                     </article>
                 </div>
         
-        
         <div class="container">
             <div class="row" id="produtos">
                 <h2>Produtos</h2>
 
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <article class="card">
+                <div class="col-lg-3 col-md-6 mb-2 col-sm-12">  <!--"col-lg-4" => coluna large 4 colunas / "col-md-4" => coluna middle 6 colunas / "col-lg-4" => coluna small 12 colunas -->
+                    <article class="card">                      <!--"mb-2" => margin-bottom 2 (0.5 rem) spacers de mapara Sass / 1 rem = 16px -->
                         <div class="card-header">
                             Roupas e guias
                         </div>
-                        <img class="image-card" src="./images/cachorro com roupa.jpg" alt="cachorro com roupa">
+                        <img class="image-card" src="./images/cachorro com roupa.webp" alt="cachorro com roupa">
                         <div class="card-body">
-                            <h6>Para o conforto e segurança do seu pet:</h6>
+                            <h6>Conforto e segurança</h6>
                             <ul>
                                 <li>Blusas</li>
                                 <li>Calçados</li>
@@ -150,14 +148,14 @@
                     </article>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <article class="card">
+                <div class="col-lg-3 col-md-6 mb-2 col-sm-12">   
+                    <article class="card">                      
                         <div class="card-header">
                             Brinquedos
                         </div>
                         <img class="image-card" src="./images/brinquedos.webp" alt="cachorro com roupa">
                         <div class="card-body">
-                            <h6>Variedades para cada tipo de pet</h6>
+                            <h6>Para cada tipo de pet</h6>
                             <ul>
                                 <li>Bolinhas</li>
                                 <li>Mordedores</li>
@@ -169,34 +167,34 @@
                     </article>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 mb-2 col-sm-12">
                     <article class="card">
-                        <div class="card-header">
-                            Higiene / Saúde / Alimentação
+                        <div class="card-header" id="higiene">
+                            Higiene | Saúde | Alimentação
                         </div>
-                        <img class="image-card" src="./images/higiene, saude, alimentação.webp">
+                        <img class="image-card" src="./images/ração.jpg">
                         <div class="card-body">
-                            <h6>Para o bem estar do seu pet</h6>
+                            <h6>Para o bem estar</h6>
                             <ul>
                                 <li>Shampoos</li>
                                 <li>Lenços umedecidos</li>
                                 <li>Rações</li>
                                 <li>Petiscos</li>
-                                <li>Vitâminas</li>
+                                <li>Vitaminas</li>
                                 <li>Farmácia</li>
                             </ul>
                         </div>
                     </article>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Lar do pet
                             </div>
                             <img class="image-card" src="./images/lar do pet.webp">
                             <div class="card-body">
-                                <h6>Para seu pet, temos</h6>
+                                <h6>Para cada especie e tamanho</h6>
                                 <ul>
                                     <li>Aquários</li>
                                     <li>Casinhas</li>
@@ -210,12 +208,12 @@
                 <div class="row" id="pets">
                     <h2>Pets</h2>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Mamíferos
                             </div>
-                            <img class="image-card" src="./images/mamiferos.png">
+                            <img class="image-card" src="./images/cão-e-gato-juntos.jpg">
                             <div class="card-body">
                                 <h6>Adquira um mamífero</h6>
                                 <ul>
@@ -227,7 +225,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Aves
@@ -246,7 +244,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Roedores
@@ -265,12 +263,12 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Peixes
                             </div>
-                            <img class="image-card" src="./images/peixes.jpeg">
+                            <img class="image-card" src="./images/peixe.jpg">
                             <div class="card-body">
                                 <h6>Adquira um peixinho</h6>
                                 <ul>
@@ -288,7 +286,7 @@
                 <div class="row" id="servicos"></div>
                     <h2>Serviços</h2>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Banho e tosa
@@ -304,7 +302,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Adestramento
@@ -321,7 +319,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 mb-2 col-sm-12">
                         <article class="card">
                             <div class="card-header">
                                 Adoção
@@ -350,8 +348,24 @@
                         </article>
                     </div>
                 </div>
-
         </div>
+    
+    <footer>
+        <div class="container-flex">
+            <a>&copy; Pet Happy - Todos os direitos reservados - 2023</a>
+            <ul id="icones">
+                <li>
+                    <img src="/icones/facebook.png">
+                </li>
+                <li>
+                    <img src="./icones/instagram.png">
+                </li>
+                <li>
+                    <img src="./icones/youtube.png">
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="/lib/bootstrap.bundle.min.js"></script>
 </body>
 </html>
