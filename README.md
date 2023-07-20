@@ -11,18 +11,22 @@ O projeto possui as seções:
   <li>Contato.</li>
 </ul>
 <h2>Layout mobile</h2>
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/mobile_1.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/mobile_2.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/mobile_3.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/mobile_4.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/mobile_5.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/mobile_6.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_1.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_2.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_3.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_4.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_5.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_6.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_7.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_8.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_9.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/mobile_10.png">
 <h2>Layout web</h2>
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/web_1.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/web_2.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/web_3.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/web_4.png">
-<img src="https://github.com/frankfsilva/petshop/blob/main/prints/web_5.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/web_1.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/web_2.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/web_3.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/web_4.png">
+<img src="https://github.com/frankfsilva/pet-shop/blob/main/prints/web_5.png">
 <h2>Tecnologias utilizadas</h2>
 <ul>
   <li>HTML5;</li>
