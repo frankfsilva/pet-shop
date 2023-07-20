@@ -1,6 +1,6 @@
-h1>Petshop</h1>
+h1>Pet Happy</h1>
 <h2>Sobre o projeto</h2>
-Petshop é um website criado para expôr os produtos e serviços ofertados por um estabelecimento.
+Pet Happy é um website criado para expôr os produtos e serviços ofertados por um estabelecimento.
 Esta pagina foi criada utilizando-se de recursos e métodos que promovem um layout com um slide dinâmico e cards em seções distintas.
 O projeto possui as seções:
 <ul>
